@@ -12,75 +12,90 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <nav>
-          <ul>
-            <li>Alex Guizar</li>
-            <li>Projects</li>
-            <li>Contact</li>
+        <nav class="header__nav">
+          <ul class="header__nav__list">
+            <li class="header__nav__list__main">Alex Guizar</li>
+            <li class="header__nav__list__section">Projects</li>
+            <li class="header__nav__list__section">About Me</li>
+            <li class="header__nav__list__section">Contact</li>
           </ul>
         </nav>
       </header>
 
       <main class="main">
-        <h1>Alex Guizar</h1>
+        <h1 class="main__heading">Alex Guizar</h1>
 
-        <section>
-          <h2>Projects</h2>
+        <p class="main__blurb">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
 
-          <div>
-            <a href=""><img src="" srcset="" alt="" /></a>
-            <h3>Inline Warehouse</h3>
-            <p></p>
-            <a href="">Link to Website</a>
-          </div>
+        <section class="projects">
+          <h2 class="projects__heading">Projects (Work? Ask what the preferred title for this section would be.)</h2>
 
-          <div>
-            <a href=""><img src="" srcset="" alt="" /></a>
-            <h3>Tennis Warehouse</h3>
-            <p></p>
-            <a href="">Link to Website</a>
-          </div>
+          <div class="projects__row">
+            <div class="projects__row__cell">
+              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <h3 class="projects__row__cell__heading">Inline Warehouse</h3>
+              <p class="projects__row__cell__info">Lead developer in implementing design for mobile first, responsive redesign. Focused on creation of JS modules for product ordering, shopping cart, and product package ordering.</p>
+              <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery, Bootstrap.js</p>
+              <a href="">Link to Website</a>
+            </div>
 
-          <div>
-            <a href=""><img src="" srcset="" alt="" /></a>
-            <h3>Tackle Warehouse</h3>
-            <p></p>
-            <a href="">Link to Website</a>
-          </div>
+            <div class="projects__row__cell">
+              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <h3 class="projects__row__cell__heading">Tennis Warehouse</h3>
+              <p class="projects__row__cell__info">Developer working on general upkeep, layout adjustments, and implementing new payment methods. Handled creation of mobile website using jQuery Mobile.</p>
+              <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery, jQuery Mobile</p>
+              <a href="">Link to Website</a>
+            </div>
 
-          <div>
-            <a href=""><img src="" srcset="" alt="" /></a>
-            <h3>Employee Directory</h3>
-            <p></p>
-            <a href="">Link to Website</a>
-          </div>
+            <div class="projects__row__cell">
+              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <h3 class="projects__row__cell__heading">Tackle Warehouse</h3>
+              <p class="projects__row__cell__info">Developer creating content builders for employee use to generate modular informational pages and product mailers. Handles general upkeep, layout adjustments, and implementing new payment methods.</p>
+              <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery, jQuery Mobile</p>
+              <a href="">Link to Website</a>
+            </div>
 
-          <div>
-            <a href=""><img src="" srcset="" alt="" /></a>
-            <h3>WebApp Dashboard</h3>
-            <p></p>
-            <a href="">Link to Website</a>
-          </div>
+            <div class="projects__row__cell">
+              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <h3 class="projects__row__cell__heading">Employee Directory</h3>
+              <p class="projects__row__cell__info">Created a searchable employee directory using information retrieved from the randomuser.me api. Used JavaScript and jQuery plugins to generate a modal that allows the user to cycle through the available employees.</p>
+              <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery</p>
+              <a href="">Link to Website</a>
+            </div>
 
-          <div>
-            <a href=""><img src="" srcset="" alt="" /></a>
-            <h3>Game Show App</h3>
-            <p></p>
-            <a href="">Link to Website</a>
+            <div class="projects__row__cell">
+              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <h3 class="projects__row__cell__heading">WebApp Dashboard</h3>
+              <p class="projects__row__cell__info">Created a responsive app dashboard displaying daily traffic and user device information through Chart.js.</p>
+              <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, Chart.js</p>
+              <a href="">Link to Website</a>
+            </div>
+
+            <div class="projects__row__cell">
+              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <h3 class="projects__row__cell__heading">Game Show App</h3>
+              <p class="projects__row__cell__info">Developed the game "Wheel of Success" where the user selects letters off of a "qwerty" style virtual keyboard to guess the hidden phrase. The user is allowed 5 misses per game session.</p>
+              <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+              <a href="">Link to Website</a>
+            </div>
           </div>
         </section>
 
-        <section>
+        <section class="contact">
           <h2>Contact</h2>
 
-          <div>
-            <p>Email</p>
+          <div class="contact__info">
+            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+            <p><a href="mailto:alexguizar90@gmail.com">Contact Me</a></p>
           </div>
         </section>
       </main>
 
-      <footer>
-
+      <footer class="footer">
+        <p>Email: <a href="mailto:alexguizar90@gmail.com">alexguizar90@gmail.com</a></p>
+        <p><a href="linkedin">LinkedIn</a></p>
+        <p><a href="github">GitHub</a></p>
+        <p><a href="twitter">Twitter</a></p>
       </footer>
     </div>
 
