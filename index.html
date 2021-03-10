@@ -10,29 +10,45 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
+    <div id="mobile_nav" class="mobile_nav">
+      <div class="bg_test"></div>
+      <ul class="mobile_nav__list">
+        <li class="mobile_nav__list__item">Projects</li>
+        <li class="mobile_nav__list__item">About Me</li>
+        <li class="mobile_nav__list__item">Contact</li>
+      </ul>
+
+      <span id="mobile_nav-close" class="mobile_nav__close">Close</span>
+    </div>
+
     <div class="wrapper">
-      <header class="header">
+      <header id="header" class="header">
         <nav class="header__nav">
           <ul class="header__nav__list">
             <li class="header__nav__list__main">Alex Guizar</li>
-            <li class="header__nav__list__section">Projects</li>
-            <li class="header__nav__list__section">About Me</li>
-            <li class="header__nav__list__section">Contact</li>
+            <li class="header__nav__list__option">Projects</li>
+            <li class="header__nav__list__option">About Me</li>
+            <li class="header__nav__list__option">Contact</li>
+            <li class="header__nav__list__menu">
+              <span id="mobile_menu">Menu</span>
+            </li>
           </ul>
         </nav>
       </header>
 
       <main class="main">
-        <h1 class="main__heading">Alex Guizar</h1>
+        <section id="intro" class="intro">
+          <h1 class="intro__heading">Alex Guizar</h1>
 
-        <p class="main__blurb">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+          <p class="intro__blurb">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
+        </section>
 
-        <section class="projects">
-          <h2 class="projects__heading">Projects (Work? Ask what the preferred title for this section would be.)</h2>
+        <section id="projects" class="projects">
+          <h2 class="projects__heading">Projects</h2>
 
           <div class="projects__row">
             <div class="projects__row__cell">
-              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <a href=""><img class="projects__row__cell__img" src="https://i.picsum.photos/id/420/640/360.jpg?hmac=EDYnFdrKi4NsUt6oLukq-LJfGtHSOypwK-NOIKVN8mk" srcset="" alt="" /></a>
               <h3 class="projects__row__cell__heading">Inline Warehouse</h3>
               <p class="projects__row__cell__info">Lead developer in implementing design for mobile first, responsive redesign. Focused on creation of JS modules for product ordering, shopping cart, and product package ordering.</p>
               <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery, Bootstrap.js</p>
@@ -40,7 +56,7 @@
             </div>
 
             <div class="projects__row__cell">
-              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <a href=""><img class="projects__row__cell__img" src="https://i.picsum.photos/id/643/640/360.jpg?hmac=KYoyYk7gxqj6xw4x3XSavRU0I3YincX1D8CIhumr460" srcset="" alt="" /></a>
               <h3 class="projects__row__cell__heading">Tennis Warehouse</h3>
               <p class="projects__row__cell__info">Developer working on general upkeep, layout adjustments, and implementing new payment methods. Handled creation of mobile website using jQuery Mobile.</p>
               <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery, jQuery Mobile</p>
@@ -48,7 +64,7 @@
             </div>
 
             <div class="projects__row__cell">
-              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <a href=""><img class="projects__row__cell__img" src="https://i.picsum.photos/id/1037/640/360.jpg?hmac=SXvg-te4FA21jTSCOUYPTmJq4e3VT7EFgQAgEBV_CB0" srcset="" alt="" /></a>
               <h3 class="projects__row__cell__heading">Tackle Warehouse</h3>
               <p class="projects__row__cell__info">Developer creating content builders for employee use to generate modular informational pages and product mailers. Handles general upkeep, layout adjustments, and implementing new payment methods.</p>
               <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery, jQuery Mobile</p>
@@ -56,7 +72,7 @@
             </div>
 
             <div class="projects__row__cell">
-              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <a href=""><img class="projects__row__cell__img" src="https://i.picsum.photos/id/19/640/360.jpg?hmac=rEckzBzF2vA6DwLNnqWQ2SbtMUa1KgM_1_pdJ8GL04k" srcset="" alt="" /></a>
               <h3 class="projects__row__cell__heading">Employee Directory</h3>
               <p class="projects__row__cell__info">Created a searchable employee directory using information retrieved from the randomuser.me api. Used JavaScript and jQuery plugins to generate a modal that allows the user to cycle through the available employees.</p>
               <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, jQuery</p>
@@ -64,7 +80,7 @@
             </div>
 
             <div class="projects__row__cell">
-              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <a href=""><img class="projects__row__cell__img" src="https://i.picsum.photos/id/572/640/360.jpg?hmac=V04YmPX9UzRdc2NIHIzxze6Vu5GldA3yLzbL-M8X0r0" srcset="" alt="" /></a>
               <h3 class="projects__row__cell__heading">WebApp Dashboard</h3>
               <p class="projects__row__cell__info">Created a responsive app dashboard displaying daily traffic and user device information through Chart.js.</p>
               <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript, Chart.js</p>
@@ -72,7 +88,7 @@
             </div>
 
             <div class="projects__row__cell">
-              <a href=""><img class="projects__row__cell__img" src="" srcset="" alt="" /></a>
+              <a href=""><img class="projects__row__cell__img" src="https://i.picsum.photos/id/362/640/360.jpg?hmac=x7m1JTNGmTeLXj3fNIGCDIfNY4W0ZrfcMd2a5qoiw48" srcset="" alt="" /></a>
               <h3 class="projects__row__cell__heading">Game Show App</h3>
               <p class="projects__row__cell__info">Developed the game "Wheel of Success" where the user selects letters off of a "qwerty" style virtual keyboard to guess the hidden phrase. The user is allowed 5 misses per game session.</p>
               <p class="projects__row__cell__skills"><strong>Skills:</strong> HTML, CSS, JavaScript</p>
@@ -81,8 +97,8 @@
           </div>
         </section>
 
-        <section class="contact">
-          <h2>Contact</h2>
+        <section id="contact" class="contact">
+          <h2 class="contact__heading">Contact</h2>
 
           <div class="contact__info">
             <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
@@ -91,11 +107,13 @@
         </section>
       </main>
 
-      <footer class="footer">
-        <p>Email: <a href="mailto:alexguizar90@gmail.com">alexguizar90@gmail.com</a></p>
-        <p><a href="linkedin">LinkedIn</a></p>
-        <p><a href="github">GitHub</a></p>
-        <p><a href="twitter">Twitter</a></p>
+      <footer id="footer" class="footer">
+        <p class="footer__email">Email: <a href="mailto:alexguizar90@gmail.com">alexguizar90@gmail.com</a></p>
+        <ul class="footer__social">
+          <li class="footer__social__item"><a href="linkedin">LinkedIn</a></li>
+          <li class="footer__social__item"><a href="github">GitHub</a></li>
+          <li class="footer__social__item"><a href="twitter">Twitter</a></li>
+        </ul>
       </footer>
     </div>
 

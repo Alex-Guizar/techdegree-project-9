@@ -1,5 +1,7 @@
 .projects {
-  padding: 0 12px;
+  max-width: 992px;
+  padding: 4rem 12px;
+  margin: 0 auto;
 
   &__heading {
     text-align: center;
@@ -10,13 +12,16 @@
     flex-wrap: wrap;
     margin-left: -12px;
     margin-right: -12px;
+    margin-top: 1rem;
 
     &__cell {
       flex: 1 1 100%;
       width: 100%;
+      padding: 0.75rem 12px;
+      margin-top: 2rem;
 
       &__img {
-
+        width: 100%;
       }
 
       &__heading {
@@ -28,7 +33,12 @@
       }
 
       &__skills {
-        
+
+      }
+
+      @include for-width($media-md) {
+        flex: 1 1 50%;
+        width: 50%;
       }
     }
   }
