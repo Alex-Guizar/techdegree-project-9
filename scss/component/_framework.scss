@@ -1,12 +1,12 @@
 .header {
+  position: fixed;
+  top: 0;
 
   &__nav {
-    max-width: 1200px;
-    margin: 0 auto;
 
     &__list {
       display: flex;
-      padding: 0.5rem 16px;
+      padding: 1rem 16px;
       margin: 0;
       list-style: none;
 
@@ -35,15 +35,18 @@
 }
 
 .footer {
+  padding: 2rem 12px;
+  background-color: #eeeeee;
 
   &__email {
     text-align: center;
+    margin-top: 0;
   }
 
   &__social {
     display: flex;
-    padding: 0.5rem 16px;
-    margin: 0;
+    padding: 0 16px;
+    margin: 1rem 0 0;
     justify-content: center;
     list-style: none;
 

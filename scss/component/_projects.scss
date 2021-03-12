@@ -1,10 +1,11 @@
 .projects {
   max-width: 992px;
-  padding: 4rem 12px;
+  padding: 5rem 12px;
   margin: 0 auto;
 
   &__heading {
     text-align: center;
+    margin-top: 0;
   }
 
   &__row {
