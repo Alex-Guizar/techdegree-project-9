@@ -1,12 +1,20 @@
 .icon {
-  display: inline-block;
+  position: relative;
+  display: block;
   width: 48px;
   height: 0;
   padding-top: 48px;
+  border: 0;
   overflow: hidden;
   text-indent: -9999px;
+  background-color: transparent;
   background-size: 48px 48px;
   background-position: 0 0;
+
+  &--sm {
+    width: 32px;
+    padding-top: 32px;
+  }
 
   &--linkedin {
     background-image: url('../images/linkedin.svg');
@@ -18,5 +26,30 @@
 
   &--twitter {
     background-image: url('../images/twitter.svg');
+  }
+
+  &--menu {
+
+    & .bar1, & .bar2, & .bar3 {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -16px;
+      width: 32px;
+      height: 4px;
+      background-color: #000000;
+    }
+
+    & .bar1 {
+      top: 5px;
+    }
+
+    & .bar2 {
+      top: 14px;
+    }
+
+    & .bar3 {
+      top: 23px;
+    }
   }
 }

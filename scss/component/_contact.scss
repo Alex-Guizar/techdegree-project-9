@@ -1,11 +1,35 @@
 .contact {
-  max-width: 992px;
-  padding: 5rem 12px;
-  margin: 0 auto;
+  position: relative;
+  background-color: #cccccc;
+  padding: 6rem 12px 8rem;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -35px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 35px 100vw 0 0;
+    border-color: transparent #cccccc transparent transparent ;
+  }
+
+  &__wrap {
+    max-width: 992px;
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 100px;
+  }
 
   &__heading {
     text-align: center;
-    margin: 0;
+    margin: 3rem 0;
   }
 
   &__info {
