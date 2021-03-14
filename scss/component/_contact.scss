@@ -1,19 +1,9 @@
 .contact {
-  position: relative;
-  background-color: #cccccc;
-  padding: 6rem 12px 8rem;
+  background-color: $color-opal;
   text-align: center;
 
   &::before {
-    content: '';
-    position: absolute;
-    top: -35px;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 35px 100vw 0 0;
-    border-color: transparent #cccccc transparent transparent ;
+    border-color: transparent $color-opal transparent transparent;
   }
 
   &__wrap {
@@ -28,12 +18,11 @@
   }
 
   &__heading {
-    text-align: center;
-    margin: 3rem 0;
+    margin-top: 3rem;
   }
 
   &__info {
-    margin-top: 3rem;
+    margin-top: 2rem;
     text-align: center;
 
     &__btn {

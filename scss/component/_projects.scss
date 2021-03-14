@@ -1,14 +1,12 @@
 .projects {
-  padding: 8rem 12px;
+
+  &::before {
+    border-color: transparent transparent transparent #ffffff;
+  }
 
   &__wrap {
     max-width: 992px;
     margin: 0 auto;
-  }
-
-  &__heading {
-    text-align: center;
-    margin-top: 0;
   }
 
   &__row {
@@ -26,18 +24,6 @@
 
       &__img {
         width: 100%;
-      }
-
-      &__heading {
-
-      }
-
-      &__info {
-
-      }
-
-      &__skills {
-
       }
 
       @include for-width($media-md) {

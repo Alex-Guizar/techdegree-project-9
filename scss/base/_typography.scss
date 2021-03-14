@@ -3,7 +3,7 @@
 /* ============================================= */
 * {
   font-family: 'Roboto', sans-serif;
-  color: #777;
+  color: $color-primary;
   box-sizing: border-box;
 }
 
@@ -13,5 +13,41 @@ p {
 }
 
 a {
-  text-decoration: none;
+  // text-decoration: none;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+
+  @include for-width($media-sm) {
+    font-size: 2.5rem;
+  }
+
+  @include for-width($media-md) {
+    font-size: 3rem;
+  }
+}
+
+h2 {
+  font-size: 1.75rem;
+
+  @include for-width($media-sm) {
+    font-size: 2rem;
+  }
+
+  @include for-width($media-md) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  margin: 1rem 0 0;
 }

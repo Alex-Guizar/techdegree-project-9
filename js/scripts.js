@@ -1,4 +1,5 @@
 'use strict';
+
 const throttle = function(func, time) {
 	let timerId;
 	return function () {
@@ -12,7 +13,7 @@ const throttle = function(func, time) {
 
 			timerId = undefined;
 		}, time);
-	}
+	};
 };
 
 (function() {
@@ -36,7 +37,6 @@ const throttle = function(func, time) {
   const sectionSelector = document.querySelectorAll("section");
   const links = document.querySelectorAll('.header__nav__list__link');
   let sections = [];
-  let i = 0;
 
   Array.prototype.forEach.call(sectionSelector, function(e) {
     const section = {};

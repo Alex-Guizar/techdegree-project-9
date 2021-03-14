@@ -13,9 +13,10 @@
         display: inline-block;
         padding: 8px 12px;
         border-radius: 6px;
+        text-decoration: none;
 
         &.is-active {
-          background-color: #333333;
+          background-color: $color-primary;
           color: #ffffff;
         }
       }
@@ -53,7 +54,7 @@
 .footer {
   position: relative;
   padding: 2rem 12px;
-  background-color: #eeeeee;
+  background-color: $color-secondary;
 
   &::before {
     content: '';
@@ -64,7 +65,7 @@
     height: 0;
     border-style: solid;
     border-width: 35px 0 0 100vw;
-    border-color: transparent transparent transparent #eeeeee;
+    border-color: transparent transparent transparent $color-secondary;
   }
 
   &__email {
@@ -138,6 +139,7 @@
       display: block;
       padding: 12px 16px;
       color: #ffffff;
+      text-decoration: none;
     }
   }
 
